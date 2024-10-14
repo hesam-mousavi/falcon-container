@@ -62,11 +62,13 @@ namespace HesamMousavi\FalconContainer;
 class Test {}
 ~~~
 
-Result of Calling This Class in Bind Mode:
+Result of Calling This Class:
 ~~~php
 $container = \HesamMousavi\FalconContainer\FalconContainer::getInstance();
 
 $container->singleton('test', \HesamMousavi\FalconContainer\Test::class);
+//or
+//$container->bind('test', \HesamMousavi\FalconContainer\Test::class);
 
 dump($container->get('test'));
 dump($container->get('test'));
