@@ -1,7 +1,7 @@
 {
   "name": "hesam-mousavi/falcon-container",
-  "description": "powerful service container and service provider with composite autowiring and binding",
-  "version": "1.0.1",
+  "description": "Powerful dependency-injection container(service container), and service-provider with composite autowiring and binding",
+  "version": "1.0.2",
   "license": "MIT",
   "autoload": {
     "psr-4": {
