@@ -86,7 +86,7 @@ HesamMousavi\FalconContainer\Test {#6}
 ~~~
 
 ## Autowire Mode
-If the class is not bound and called directly via the get method, it will be `automatically` resolved using reflection. This means that the autowire mode is always active, and if a bind(or singleton) is defined for a service, it uses it; otherwise, it resolves it automatically.
+If the class is not bound and called directly via the `get` method, it will be `automatically` resolved using reflection. This means that the `autowire` mode is `always active`, and if a bind(or singleton) is defined for a service, it uses it; otherwise, it resolves it automatically.
 
 ___
 ## Using `Service Provider` in Falcon Container
