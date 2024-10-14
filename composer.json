@@ -1,0 +1,22 @@
+{
+  "name": "hesam-mousavi/falcon-container",
+  "description": "powerful service container and service provider with composite autowiring and binding",
+  "version": "1.0.0",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "HesamMousavi\\FalconContainer\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Seyed Hesam Mousavi",
+      "email": "hesam.mousavi@hotmail.com"
+    }
+  ],
+  "require": {
+    "psr/container": "^2.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
