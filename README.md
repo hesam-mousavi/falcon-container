@@ -100,9 +100,9 @@ use HesamMousavi\FalconContainer\FalconServiceProvider;
 use HesamMousavi\FalconContainer\Test;
 
 class TestServiceProvider extends FalconServiceProvider {
-public function register() {
-$this->container->singleton('test', Test::class);
-}
+    public function register() {
+        $this->container->singleton('test', Test::class);
+    }
 
     public function boot() {}
 }
