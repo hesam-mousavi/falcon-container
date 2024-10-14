@@ -140,22 +140,21 @@ class FalconContainer extends Singleton implements ContainerInterface
     public function runProviders(string $path): void
     {
         $providers = require_once $path;
-        $provider_instances = new \WeakMap();
+        $provider_instances = [];
 
         foreach ($providers as $provider) {
             if (\is_subclass_of($provider, FalconServiceProvider::class)) {
                 $instance = new $provider($this);
-                $provider_instances[$instance] = true;
+                $provider_instances[$provider] = $instance;
             }
         }
 
-        foreach ($provider_instances as $instance => $bool) {
+        foreach ($provider_instances as $provider => $instance) {
             $instance->register();
         }
 
-        foreach ($provider_instances as $instance => $bool) {
+        foreach ($provider_instances as $provider => $instance) {
             $instance->boot();
-            unset($provider_instances[$instance]);
         }
     }
 
