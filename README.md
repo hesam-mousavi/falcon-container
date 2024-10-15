@@ -2,7 +2,17 @@
 The complexity of existing packages providing service containers and providers led to the creation of this project. Falcon doesn't force you to create a BIND. If a bind exists for an ID, it uses it; otherwise, it proceeds with `AUTOWIRE`.
 
 ## Getting Started
-First, create the container:
+- add this package to your project:
+~~~sh
+composer require hesam-mousavi/falcon-container
+~~~
+
+- add composer autoload:
+~~~php
+<?php
+require_once __DIR__.'/vendor/autoload.php';
+~~~
+- then create the container:
 
 ~~~php
 $container = \HesamMousavi\FalconContainer\FalconContainer::getInstance();
